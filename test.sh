@@ -5,7 +5,7 @@
 solr_host="http://localhost:8984/solr/"
 
 #Using curl to hit FQDN and check response code of  Solr Server
-resp=$(curl --write-out %{http_code} --silent --output /dev/null "$solr")
+resp=$(curl --write-out %{http_code} --silent --output /dev/null "$solr_host")
 #Saving code in resp variable
 echo $resp                                                      
 
